@@ -3,13 +3,13 @@
 # You must provide a value for each of these parameters.
 # ---------------------------------------------------------------------------------------------------------------------
 
-variable "username" {
+variable "db_username" {
   description = "The username for the database"
   type        = string
   sensitive   = true
 }
 
-variable "password" {
+variable "db_password" {
   description = "The password for the database"
   type        = string
   sensitive   = true
@@ -26,7 +26,7 @@ variable "db_name" {
   default     = "example_database_stage"
 }
 
-variable "instance_class" {
+variable "db_instance_class" {
   description = "The name to use for the database"
   type        = string
   default     = "db.t3.micro"
