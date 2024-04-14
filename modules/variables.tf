@@ -20,7 +20,7 @@ variable "db_password" {
 # These parameters have reasonable defaults.
 # ---------------------------------------------------------------------------------------------------------------------
 
-variable "db_name" {
+variable "db_dbname" {
   description = "The name to use for the database"
   type        = string
   default     = "example_database_stage"
