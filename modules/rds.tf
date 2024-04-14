@@ -18,7 +18,7 @@ resource "aws_db_instance" "mydb" {
   engine              = "mysql"
   allocated_storage   = 10
   instance_class      = var.db_instance_class
-  db_name             = var.db_name
+  db_name             = var.db_dbname
   username            = var.db_username
   password            = var.db_password
   skip_final_snapshot = true
